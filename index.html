@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Rosvely Medina - Ginecología Regenerativa | Caracas</title>
+    <meta name="description" content="Dra. Rosvely Medina, líder en Ginecología Regenerativa en Caracas. Tratamientos láser CO2, HIFU, PRP y medicina estética íntima en CECLIM.">
+    <meta name="keywords" content="ginecóloga caracas, ginecología regenerativa, láser CO2 vaginal, HIFU, medicina estética íntima">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #e91e63;
+            --primary-light: #f8bbd9;
+            --secondary: #ff4081;
+            --accent: #ffc1cc;
+            --dark: #1a1a1a;
+            --gray: #6b7280;
+            --light-gray: #f9fafb;
+            --white: #ffffff;
+            --gradient: linear-gradient(135deg, #e91e63 0%, #ff4081 100%);
+            --soft-gradient: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 50%, #ffffff 100%);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Modern Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary-light);
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            background: var(--gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        /* Compact Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 6rem 1.5rem 3rem;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="grad" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.15)"/><stop offset="100%" style="stop-color:rgba(255,255,255,0)"/></radialGradient></defs><circle cx="150" cy="150" r="100" fill="url(%23grad)"/><circle cx="850" cy="200" r="150" fill="url(%23grad)"/><circle cx="700" cy="800" r="120" fill="url(%23grad)"/></svg>') no-repeat center;
+            background-size: cover;
+            opacity: 0.6;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.9rem 1.8rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hero-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-photo {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: var(--white);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .hero-photo::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: var(--white);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        /* Compact About Section */
+        .about {
+            padding: 4rem 1.5rem;
+            background: var(--light-gray);
+        }
+
+        .about-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-photo {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .about-text {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+        }
+
+        .credential-item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .credential-item i {
+            color: var(--primary);
+            width: 16px;
+        }
+
+        /* Compact Services Grid */
+        .services {
+            padding: 4rem 1.5rem;
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            background: var(--gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-subtitle {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border-top: 3px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-top-color: var(--primary);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .service-description {
+            color: var(--gray);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .service-features i {
+            color: var(--primary);
+            font-size: 0.8rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 4rem 1.5rem;
+            background: var(--soft-gradient);
+        }
+
+        .testimonials-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 1.8rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 2.5rem;
+            color: var(--primary-light);
+            position: absolute;
+            top: 0.5rem;
+            left: 1.5rem;
+            line-height: 1;
+        }
+
+        .testimonial-text {
+            margin: 1.5rem 0 1rem;
+            color: var(--gray);
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .author-avatar {
+            width: 45px;
+            height: 45px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .author-info h4 {
+            font-size: 0.95rem;
+            color: var(--dark);
+            margin-bottom: 0.2rem;
+        }
+
+        .author-role {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 0.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .star {
+            color: #fbbf24;
+            font-size: 0.9rem;
+        }
+
+        .star.empty {
+            color: #e5e7eb;
+        }
+
+        /* Instagram Integration */
+        .instagram {
+            padding: 3rem 1.5rem;
+        }
+
+        .instagram-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .instagram-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .instagram-header i {
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .instagram-feed {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .instagram-post {
+            aspect-ratio: 1;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .instagram-post img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .instagram-post:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .instagram-post:hover img {
+            transform: scale(1.05);
+        }
+
+        .instagram-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .instagram-post:hover .instagram-overlay {
+            opacity: 1;
+        }
+
+        .instagram-overlay i {
+            color: var(--white);
+            font-size: 2rem;
+        }
+
+        /* Contact Form */
+        .contact {
+            padding: 4rem 1.5rem;
+            background: var(--light-gray);
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+        }
+
+        .form-container {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: border-color 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: var(--gradient);
+            color: var(--white);
+            border: none;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 3rem 1.5rem 1rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* Modern Chatbot */
+        .chatbot-container {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .chatbot-toggle {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border: none;
+            border-radius: 50%;
+            color: var(--white);
+            font-size: 1.4rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.05);
+        }
+
+        .chatbot-toggle::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: var(--gradient);
+            border-radius: 50%;
+            z-index: -1;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+
+        .chatbot-window {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            width: 350px;
+            height: 500px;
+            background: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chatbot-window.active {
+            display: flex;
+        }
+
+        .chatbot-header {
+            background: var(--gradient);
+            color: var(--white);
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            max-height: 350px;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-content {
+            background: var(--light-gray);
+            padding: 0.8rem 1rem;
+            border-radius: 15px;
+            max-width: 80%;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .message.user .message-content {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .chatbot-input-container {
+            padding: 1rem;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chatbot-input {
+            flex: 1;
+            padding: 0.7rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            outline: none;
+            font-size: 0.85rem;
+        }
+
+        .chatbot-send {
+            background: var(--primary);
+            border: none;
+            color: var(--white);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: var(--shadow-lg);
+            z-index: 999;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.8rem;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .credentials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .chatbot-window {
+                width: calc(100vw - 40px);
+                right: -10px;
+            }
+
+            .hero-photo {
+                width: 220px;
+                height: 220px;
+            }
+        }
+
+        /* Loading Animation */
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Modern Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3cUEqpVynPb3q1dLmi_4CcSWTRClHLi7rlXNn3r7k2hB3ijMCTjjG8Adp-27IOeY04gwzzcb65_BYhWxIuvFXwO50SJAzUWNdggrl_JibLhMmvUF11WnY7Mw3h6nSWuBjpZDN9FJqmqXTHrkKXwomGlEeUXCYl1tCpd7Ss-EEQ0rO2NTNTvsc5ps9P0E/s320/file_00000000a6e461f4bd3dd8d50f2695dd%20(1).png" alt="Dra. Rosvely Medina">
+                <span class="logo-text">Dra. Rosvely Medina</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="nav-cta">
+                <i class="fas fa-calendar-alt"></i>
+                Agendar Cita
+            </a>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Compact Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Ginecología Regenerativa de Vanguardia</h1>
+                <p class="hero-subtitle">Tratamientos láser CO2, HIFU y medicina regenerativa para el bienestar íntimo femenino</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2000+</span>
+                        <span class="stat-label">Pacientes Atendidas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfacción</span>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-white">
+                        <i class="fab fa-whatsapp"></i>
+                        Consulta WhatsApp
+                    </a>
+                    <a href="#servicios" class="btn btn-outline">
+                        <i class="fas fa-heart"></i>
+                        Ver Tratamientos
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="hero-photo">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3cUEqpVynPb3q1dLmi_4CcSWTRClHLi7rlXNn3r7k2hB3ijMCTjjG8Adp-27IOeY04gwzzcb65_BYhWxIuvFXwO50SJAzUWNdggrl_JibLhMmvUF11WnY7Mw3h6nSWuBjpZDN9FJqmqXTHrkKXwomGlEeUXCYl1tCpd7Ss-EEQ0rO2NTNTvsc5ps9P0E/s320/file_00000000a6e461f4bd3dd8d50f2695dd%20(1).png" alt="Dra. Rosvely Medina">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijq_a_xnbtcralqFvwwPDMDyR4DU9ixILl3f8YfdBpFimW63rl-OcguxYf-K6cZkdA9Yh2vh5Qr4ZEtBczwbggXddFdYuPVPzmLwz55t6-isDLDUdcTKJ7G1VdqRVF_q-xLwPwwWq-ZUc6r6Pk40afIlYc5HaZ89E12gIdkt2ZTYfLuOwuAcmqj5RpjaU/s320/Screenshot_20250606_124729_Instagram.png" alt="Dra. Rosvely Medina" class="about-photo">
+            </div>
+            
+            <div class="about-content">
+                <h2>Especialista en Medicina Regenerativa Íntima</h2>
+                <p class="about-text">
+                    Pionera en Venezuela en ginecología regenerativa, combinando técnicas avanzadas como láser CO2, HIFU y terapias con plasma rico en plaquetas para revolucionar el cuidado de la salud íntima femenina.
+                </p>
+                <p class="about-text">
+                    Mi enfoque integra la medicina preventiva con tratamientos estéticos de última generación, priorizando el bienestar integral de cada paciente.
+                </p>
+
+                <div class="credentials-grid">
+                    <div class="credential-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Médico Cirujano UCV</span>
+                    </div>
+                    <div class="credential-item">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>Ginecóloga y Obstetra</span>
+                    </div>
+                    <div class="credential-item">
+                        <i class="fas fa-award"></i>
+                        <span>Especialista en Medicina Regenerativa</span>
+                    </div>
+                    <div class="credential-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Ginecología Estética Funcional</span>
+                    </div>
+                    <div class="credential-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificada en Láser CO2 Vaginal</span>
+                    </div>
+                    <div class="credential-item">
+                        <i class="fas fa-users"></i>
+                        <span>Miembro SOGV y FLASOG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Services Section -->
+    <section id="servicios" class="services">
+        <div class="services-container">
+            <div class="section-header">
+                <h2>Tratamientos Especializados</h2>
+                <p class="section-subtitle">Tecnología de vanguardia para el rejuvenecimiento y bienestar íntimo</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laser-pointer"></i>
+                    </div>
+                    <h3>Láser CO2 Vaginal</h3>
+                    <p class="service-description">Rejuvenecimiento vaginal no invasivo para mejorar elasticidad, lubricación y sensibilidad.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Mejora la lubricación natural</li>
+                        <li><i class="fas fa-check"></i> Estimula colágeno y elastina</li>
+                        <li><i class="fas fa-check"></i> Trata atrofia vaginal</li>
+                        <li><i class="fas fa-check"></i> Sin tiempo de recuperación</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>HIFU Vaginal</h3>
+                    <p class="service-description">Ultrasonido focalizado de alta intensidad para tensar y rejuvenecer tejidos vaginales.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Mejora tono muscular</li>
+                        <li><i class="fas fa-check"></i> Estimula renovación celular</li>
+                        <li><i class="fas fa-check"></i> Resultados inmediatos</li>
+                        <li><i class="fas fa-check"></i> Procedimiento indoloro</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3>PRP Ginecológico</h3>
+                    <p class="service-description">Plasma rico en plaquetas para regenerar tejidos y mejorar función sexual.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Regeneración natural</li>
+                        <li><i class="fas fa-check"></i> Mejora sensibilidad</li>
+                        <li><i class="fas fa-check"></i> Estimula crecimiento celular</li>
+                        <li><i class="fas fa-check"></i> Seguro y natural</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-venus"></i>
+                    </div>
+                    <h3>Medicina Estética Íntima</h3>
+                    <p class="service-description">Tratamientos estéticos para mejorar apariencia y funcionalidad genital.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Labioplastia regenerativa</li>
+                        <li><i class="fas fa-check"></i> Blanqueamiento genital</li>
+                        <li><i class="fas fa-check"></i> Ácido hialurónico íntimo</li>
+                        <li><i class="fas fa-check"></i> Radiofrecuencia vaginal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-header">
+                <h2>Testimonios Reales</h2>
+                <p class="section-subtitle">Experiencias auténticas de nuestras pacientes</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">La Dra. Rosvely cambió mi vida. El tratamiento láser CO2 superó todas mis expectativas. Mi autoestima y bienestar íntimo mejoraron increíblemente. Es la mejor inversión que he hecho en mi salud.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>María Rodríguez</h4>
+                            <p class="author-role">Paciente Láser CO2</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Como ginecóloga, reconozco la excelencia profesional de la Dra. Medina. Su dominio de la medicina regenerativa es admirable. Felicitaciones por su dedicación a la innovación en nuestra especialidad.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AG</div>
+                        <div class="author-info">
+                            <h4>Dra. Ana González</h4>
+                            <p class="author-role">Ginecóloga Colega</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Tener una doctora que también es madre durante mi embarazo hizo toda la diferencia. Su empatía y comprensión son únicas. Entendía mis miedos porque los vivió. Gracias infinitas, Dra.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LM</div>
+                        <div class="author-info">
+                            <h4>Lucía Martínez</h4>
+                            <p class="author-role">Paciente Obstétrica</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Excelente doctora, pero siempre está súper ocupada. Su agenda siempre está full, lo que habla de su reputación, pero hay que programar con mucha anticipación. Vale la pena la espera.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CS</div>
+                        <div class="author-info">
+                            <h4>Carmen Silva</h4>
+                            <p class="author-role">Paciente Regular</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star empty"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">El HIFU vaginal fue increíble. Resultados inmediatos sin dolor. La Dra. Rosvely es muy profesional y hace sentir cómoda durante todo el proceso. Recomendadísima para medicina regenerativa.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">VT</div>
+                        <div class="author-info">
+                            <h4>Valentina Torres</h4>
+                            <p class="author-role">Paciente HIFU</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Como médico internista, aprecio el enfoque integral de la Dra. Medina. Su técnica de PRP es impecable y los resultados hablan por sí solos. Una verdadera especialista en su campo.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JR</div>
+                        <div class="author-info">
+                            <h4>Dr. José Ramírez</h4>
+                            <p class="author-role">Médico Internista</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram">
+        <div class="instagram-container">
+            <div class="instagram-header">
+                <i class="fab fa-instagram"></i>
+                <h2>@dra.rosvelymedina</h2>
+            </div>
+            
+            <div class="instagram-feed">
+                <div class="instagram-post" onclick="openInstagram()">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr96VnwynNATLd0iemp2hSgxw2zSRlekNnKs4nTdzoeu-tmnUnko1wRoIMUPs6dmqA8-56zYeCpCb46fLTh_wbu3ofmXVTf3otwcHGkWvCtVW9fhFNzjZszKPQ-H3wweK1bYlF1OXHkLX9gnFPyeE_L6dJ-3yXTRUFcyKK4vSMxSfyyEEA9d12-aU0pVs/s320/Screenshot_20240607_044414_Instagram.png" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post" onclick="openInstagram()">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnE6y96dZpYYwcD6_utFxbTB4gU5xsm2jffjKQxLOwqvGasMHiErc5XHUezMhYcnDopwpNaj7VzOwkV7gU7Q_k8SleuzjWwr9Fe5ZzvKZE6WOu6tPMFGWktOFbmQdxWY6TKwuRE9lp3COFw152fRs0Xi6zpRr6b9aiWzTfraR5SEzUX_L7uQRKZ_nfsGQ/s320/Screenshot_20240607_044440_Instagram.png" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post" onclick="openInstagram()">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9gHIqb1Eza4byuL0tI22FFjc0kTtGA6D81jm9SXbA_zMFgWJzWe-nU8d5aMisu0topr9mj0gruTIRjKAF32NxXXsRG2j_0gWxSGAN9Sci5bg6xI9SoW3op4n_-CJQWu2oNN1c6he7SdkURKAJoK6yf4amFuh_0JCDGRrdYQBiyY2JGlv28hTROJBO5dQ/s320/Screenshot_20240607_044342_Instagram.png" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post" onclick="openInstagram()">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP2nJ0t4TD6AmiJzEMdJQj8LICqSqkza7KrZ3JJJXQ7XcREMJU0WiW2zRV-dt_pa-kOpd9JsoJ8_kopF4aQUqpA3JakHDWlRXMaTYTLgrWxd2eiAGpGtcVBhRc3O_cHPkW8Mu4rvJ2sgJJ6mlF3wJRkivOeAgsY7neZjqL61TEo-olzzZcBhBj9ViJYA0/s320/Screenshot_20240607_044423_Instagram.png" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-post" onclick="openInstagram()">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijq_a_xnbtcralqFvwwPDMDyR4DU9ixILl3f8YfdBpFimW63rl-OcguxYf-K6cZkdA9Yh2vh5Qr4ZEtBczwbggXddFdYuPVPzmLwz55t6-isDLDUdcTKJ7G1VdqRVF_q-xLwPwwWq-ZUc6r6Pk40afIlYc5HaZ89E12gIdkt2ZTYfLuOwuAcmqj5RpjaU/s320/Screenshot_20250606_124729_Instagram.png" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://www.instagram.com/dra.rosvelymedina?igsh=MWIxYzA2amlpbW9jdQ==" target="_blank" class="btn" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white;">
+                <i class="fab fa-instagram"></i>
+                Seguir en Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>CECLIM - Centro Clínico</h4>
+                        <p>C.C. Galerías Prados del Este<br>Nivel Alto, Locales PA 10-12<br>Caracas, Venezuela</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Teléfono</h4>
+                        <p>+58 424-213-7784</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4>Horarios de Consulta</h4>
+                        <p>Lunes a Viernes: 8:00 AM - 5:00 PM<br>Citas previo agendamiento</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h3>Agendar Consulta</h3>
+                <form id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tratamiento">Tratamiento de Interés</label>
+                        <select id="tratamiento">
+                            <option value="">Seleccionar...</option>
+                            <option value="laser-co2">Láser CO2 Vaginal</option>
+                            <option value="hifu">HIFU Vaginal</option>
+                            <option value="prp">PRP Ginecológico</option>
+                            <option value="estetica">Medicina Estética Íntima</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="control">Control Prenatal</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" rows="3" placeholder="Describe tu consulta..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Enviar por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Dra. Rosvely Medina</h4>
+                    <p>Especialista en Ginecología Regenerativa y Medicina Estética Íntima. Pionera en Venezuela en tratamientos láser CO2 y HIFU vaginal.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Tratamientos</h4>
+                    <p><a href="#servicios">Láser CO2 Vaginal</a></p>
+                    <p><a href="#servicios">HIFU Vaginal</a></p>
+                    <p><a href="#servicios">PRP Ginecológico</a></p>
+                    <p><a href="#servicios">Medicina Estética Íntima</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📍 CECLIM - Galerías Prados del Este</p>
+                    <p>📞 +58 424-213-7784</p>
+                    <p>📧 consultas@drarosvelymedina.com</p>
+                    <p>📱 @dra.rosvelymedina</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+                    <p>Sábados y Domingos: Cerrado</p>
+                    <p><em>Citas previo agendamiento</em></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dra. Rosvely Medina. Ginecología Regenerativa Caracas | Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modern Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <span>💬 Asistente Virtual</span>
+                <button onclick="toggleChatbot()" style="background: none; border: none; color: white;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot">
+                    <div class="message-content">
+                        🌸 ¡Hola! Soy el asistente de la Dra. Rosvely Medina.
+                        <br><br>
+                        ¿En qué puedo ayudarte?
+                        <br>• 📅 Agendar cita
+                        <br>• 💗 Info sobre tratamientos
+                        <br>• 📍 Ubicación y horarios
+                        <br>• 💰 Consultar precios
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-input-container">
+                <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Escribe tu mensaje...">
+                <button class="chatbot-send" id="chatbotSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5804242137784?text=Hola%20Dra.%20Rosvely%20Medina,%20me%20gustaría%20información%20sobre%20sus%20tratamientos%20de%20ginecología%20regenerativa." target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Modern JavaScript functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            document.querySelectorAll('.service-card, .testimonial-card, .instagram-post').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                const icon = this.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        navMenu.classList.remove('active');
+                        const menuIcon = menuToggle.querySelector('i');
+                        menuIcon.classList.remove('fa-times');
+                        menuIcon.classList.add('fa-bars');
+                    }
+                });
+            });
+
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 100) {
+                    header.style.background = 'rgba(255, 255, 255, 0.98)';
+                } else {
+                    header.style.background = 'rgba(255, 255, 255, 0.95)';
+                }
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const email = document.getElementById('email').value;
+            const tratamiento = document.getElementById('tratamiento').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            const tratamientos = {
+                'laser-co2': 'Láser CO2 Vaginal',
+                'hifu': 'HIFU Vaginal',
+                'prp': 'PRP Ginecológico',
+                'estetica': 'Medicina Estética Íntima',
+                'consulta': 'Consulta General',
+                'control': 'Control Prenatal'
+            };
+
+            const whatsappMessage = `🌸 *SOLICITUD DE CITA* 🌸
+
+*Dra. Rosvely Medina - Ginecología Regenerativa*
+
+👤 *Datos del Paciente:*
+- Nombre: ${nombre}
+- Teléfono: ${telefono}
+${email ? `• Email: ${email}` : ''}
+
+${tratamiento ? `🏥 *Tratamiento de Interés:*
+- ${tratamientos[tratamiento]}` : ''}
+
+${mensaje ? `📝 *Consulta:*
+${mensaje}` : ''}
+
+📍 *Ubicación:* CECLIM - Galerías Prados del Este
+🕐 *Horarios:* Lunes a Viernes 8:00 AM - 5:00 PM
+
+¡Gracias por contactarnos! 💗`;
+
+            const whatsappURL = `https://wa.me/5804242137784?text=${encodeURIComponent(whatsappMessage)}`;
+            
+            alert('✅ ¡Solicitud preparada! Serás redirigido a WhatsApp para confirmar tu cita.');
+            window.open(whatsappURL, '_blank');
+            this.reset();
+        });
+
+        // Instagram function
+        function openInstagram() {
+            window.open('https://www.instagram.com/dra.rosvelymedina?igsh=MWIxYzA2amlpbW9jdQ==', '_blank');
+        }
+
+        // Chatbot functionality
+        const chatbotToggle = document.getElementById('chatbotToggle');
+        const chatbotWindow = document.getElementById('chatbotWindow');
+        const chatbotMessages = document.getElementById('chatbotMessages');
+        const chatbotInput = document.getElementById('chatbotInput');
+        const chatbotSend = document.getElementById('chatbotSend');
+
+        function toggleChatbot() {
+            chatbotWindow.classList.toggle('active');
+            if (chatbotWindow.classList.contains('active')) {
+                chatbotInput.focus();
+            }
+        }
+
+        chatbotToggle.addEventListener('click', toggleChatbot);
+
+        function addMessage(content, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
+            
+            const messageContent = document.createElement('div');
+            messageContent.className = 'message-content';
+            messageContent.innerHTML = content;
+            
+            messageDiv.appendChild(messageContent);
+            chatbotMessages.appendChild(messageDiv);
+            
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+        }
+
+        function getBotResponse(userMessage) {
+            const message = userMessage.toLowerCase();
+            
+            if (message.includes('cita') || message.includes('agendar')) {
+                return `📅 *¡Perfecto!* Te ayudo a agendar tu cita.
+
+Puedes elegir entre nuestros tratamientos:
+- 🔬 Láser CO2 Vaginal
+- 🌊 HIFU Vaginal  
+- 💧 PRP Ginecológico
+- ✨ Medicina Estética Íntima
+
+📞 Llámanos: +58 424-213-7784
+⏰ Horarios: Lun-Vie 8AM-5PM
+
+Te conectaré por WhatsApp para confirmar 💗`;
+            }
+            
+            if (message.includes('precio') || message.includes('costo')) {
+                return `💰 *Información de Precios*
+
+Los costos varían según el tratamiento:
+- Evaluación personalizada
+- Planes de financiamiento disponibles  
+- Descuentos por paquetes
+
+📱 Contáctanos para presupuesto personalizado
+¡Te envío por WhatsApp! 💗`;
+            }
+            
+            if (message.includes('laser') || message.includes('hifu') || message.includes('prp')) {
+                return `🔬 *Tratamientos Regenerativos*
+
+✨ *Láser CO2:* Rejuvenecimiento sin cirugía
+🌊 *HIFU:* Ultrasonido para tensar tejidos  
+💧 *PRP:* Regeneración con tu propia sangre
+
+Todos son:
+- Mínimamente invasivos
+- Sin tiempo de recuperación
+- Resultados comprobados
+
+¿Te interesa información específica? 💗`;
+            }
+
+            return `🤖 Gracias por tu consulta. Te conectaré directamente con la Dra. Rosvely Medina por WhatsApp para brindarte atención personalizada.
+
+*Tu mensaje:* "${userMessage}"
+
+📱 ¡Transferiendo ahora!`;
+        }
+
+        function sendMessage() {
+            const message = chatbotInput.value.trim();
+            if (!message) return;
+            
+            addMessage(message, true);
+            chatbotInput.value = '';
+            
+            setTimeout(() => {
+                const response = getBotResponse(message);
+                addMessage(response);
+                
+                if (response.includes('Transferiendo ahora')) {
+                    setTimeout(() => {
+                        const whatsappMessage = `🌸 *CONSULTA DESDE CHATBOT* 🌸
+
+Paciente escribió:
+"${message}"
+
+📅 ${new Date().toLocaleString('es-ES')}
+
+💗 Favor responder consulta.`;
+                        
+                        const whatsappURL = `https://wa.me/5804242137784?text=${encodeURIComponent(whatsappMessage)}`;
+                        window.open(whatsappURL, '_blank');
+                    }, 1000);
+                }
+            }, 800);
+        }
+
+        chatbotSend.addEventListener('click', sendMessage);
+        chatbotInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
