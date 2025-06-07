@@ -924,6 +924,31 @@
             animation: float 4s ease-in-out infinite;
         }
 
+        /* Video Section Before Services */
+        .video-section-services {
+            width: 100%;
+            position: relative;
+            background: var(--dark);
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .video-section-services .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            background: var(--dark);
+        }
+
+        .video-section-services .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
         /* Services Section con efectos */
         .services {
             padding: 2.5rem 1rem;
@@ -1310,6 +1335,31 @@
             border-radius: 15px;
             font-size: 0.75rem;
             box-shadow: 0 2px 5px rgba(233, 30, 99, 0.2);
+        }
+
+        /* Video Section Before Reviews */
+        .video-section-reviews {
+            width: 100%;
+            position: relative;
+            background: var(--dark);
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .video-section-reviews .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            background: var(--dark);
+        }
+
+        .video-section-reviews .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
         /* Reviews Section con efectos */
@@ -2689,45 +2739,44 @@
                 <div class="about-content">
                     <p class="about-text">
                         Como especialista en obstetricia y ginecología con más de 15 años de experiencia, mi enfoque va más allá de tratar síntomas. Escucho activamente a mis pacientes, ofreciendo un trato cálido y respetuoso, trabajando con sistemas actualizados para brindar una respuesta clara y solución efectiva a cada una.
-                    </p>
-                    
-                    <!-- Audio Player -->
-                    <div class="audio-player">
-                        <div class="audio-header">
-                            <div class="audio-icon">
-                               <i class="fas fa-microphone"></i>
-                            </div>
-                            <div class="audio-info">
-                                <h3>Mi Historia Personal</h3>
-                                <p>Conoce el testimonio de la Dra. Rosvely Medina</p>
-                            </div>
+</p><!-- Audio Player -->
+                <div class="audio-player">
+                    <div class="audio-header">
+                        <div class="audio-icon">
+                           <i class="fas fa-microphone"></i>
                         </div>
-                        
-                        <div class="audio-controls">
-                            <button class="play-button" id="playButton" aria-label="Reproducir audio">
-                                <i class="fas fa-play" id="playIcon"></i>
-                            </button>
-                            
-                            <div class="audio-progress">
-                                <div class="progress-bar" id="progressBar">
-                                    <div class="progress-fill" id="progressFill"></div>
-                                </div>
-                                <span class="time-display" id="timeDisplay">0:00 / 0:00</span>
-                            </div>
-                            
-                            <div class="volume-control">
-                                <button class="volume-button" id="volumeButton" aria-label="Volumen">
-                                    <i class="fas fa-volume-up"></i>
-                                </button>
-                                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70" aria-label="Volumen">
-                            </div>
+                        <div class="audio-info">
+                            <h3>Mi Historia Personal</h3>
+                            <p>Conoce el testimonio de la Dra. Rosvely Medina</p>
                         </div>
                     </div>
+                    
+                    <div class="audio-controls">
+                        <button class="play-button" id="playButton" aria-label="Reproducir audio">
+                            <i class="fas fa-play" id="playIcon"></i>
+                        </button>
+                        
+                        <div class="audio-progress">
+                            <div class="progress-bar" id="progressBar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <span class="time-display" id="timeDisplay">0:00 / 0:00</span>
+                        </div>
+                        
+                        <div class="volume-control">
+                            <button class="volume-button" id="volumeButton" aria-label="Volumen">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70" aria-label="Volumen">
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Hidden HTML5 Audio Element for Safari compatibility -->
-                    <audio class="audio-element" id="audioElement" preload="metadata">
-                        <source src="https://drive.google.com/uc?export=download&id=1wKj2xK5yH3nB7cF8eR9tL0qM4vP2sA6z" type="audio/mpeg">
-                        Su navegador no soporta el elemento de audio.
+                <!-- Hidden HTML5 Audio Element -->
+                <audio class="audio-element" id="audioElement" preload="metadata" crossorigin="anonymous">
+                    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+                    <!-- Fallback para YouTube audio convertido - Necesitarás reemplazar con URL de audio válida -->
+                    <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVz/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmEaADuVy/LMeSsFJHSu navegador no soporta el elemento de audio.
                     </audio>
 
                     <p class="about-text">
@@ -2762,6 +2811,24 @@
                     <span>Atención Personalizada</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Video Section Before Services -->
+    <section class="video-section-services">
+        <div class="video-container">
+            <iframe 
+                title="Dra. Rosvely Medina - Servicios Especializados" 
+                src="https://player.vimeo.com/video/1091416577?h=f75b30393e&autoplay=0&loop=0&muted=0&title=1&byline=1&portrait=1&speed=1&transparent=0&gesture=media" 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen
+                loading="lazy">
+            </iframe>
         </div>
     </section>
 
@@ -3005,6 +3072,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Video Section Before Reviews -->
+    <section class="video-section-reviews">
+        <div class="video-container">
+            <iframe 
+                title="Dra. Rosvely Medina - Testimonios y Experiencias" 
+                src="https://player.vimeo.com/video/1091416756?h=67fe316dbd&autoplay=0&loop=0&muted=0&title=1&byline=1&portrait=1&speed=1&transparent=0&gesture=media" 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                allow="autoplay; fullscreen; picture-in-picture" 
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen
+                loading="lazy">
+            </iframe>
         </div>
     </section>
 
@@ -3509,37 +3594,78 @@
             animateCounters();
         });
 
-        // HTML5 Audio Player Variables (Safari compatible)
+        // AUDIO PLAYER CORREGIDO - Funciona con YouTube API para extraer audio
         let audioElement;
         let isPlaying = false;
         let currentTime = 0;
         let duration = 0;
         let volume = 70;
+        let ytPlayer;
+
+        // YouTube API para reproducir solo audio
+        function onYouTubeIframeAPIReady() {
+            // Crear iframe oculto de YouTube para extraer audio
+            const audioContainer = document.createElement('div');
+            audioContainer.style.display = 'none';
+            audioContainer.id = 'youtube-audio-player';
+            document.body.appendChild(audioContainer);
+            
+            ytPlayer = new YT.Player('youtube-audio-player', {
+                height: '0',
+                width: '0',
+                videoId: 'AKNZFHFANIc', // ID del video de YouTube
+                playerVars: {
+                    'controls': 0,
+                    'disablekb': 1,
+                    'iv_load_policy': 3,
+                    'modestbranding': 1,
+                    'rel': 0,
+                    'showinfo': 0
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            duration = ytPlayer.getDuration();
+            updateTimeDisplay();
+            ytPlayer.setVolume(volume);
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+                isPlaying = true;
+                document.getElementById('playIcon').className = 'fas fa-pause';
+                startTimeUpdate();
+            } else if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
+                isPlaying = false;
+                document.getElementById('playIcon').className = 'fas fa-play';
+                stopTimeUpdate();
+            }
+        }
+
+        let timeUpdateInterval;
+
+        function startTimeUpdate() {
+            timeUpdateInterval = setInterval(() => {
+                if (ytPlayer && ytPlayer.getCurrentTime) {
+                    currentTime = ytPlayer.getCurrentTime();
+                    updateProgress();
+                }
+            }, 1000);
+        }
+
+        function stopTimeUpdate() {
+            if (timeUpdateInterval) {
+                clearInterval(timeUpdateInterval);
+            }
+        }
 
         // Initialize Audio Player
         document.addEventListener('DOMContentLoaded', function() {
-            audioElement = document.getElementById('audioElement');
-            
-            if (audioElement) {
-                audioElement.addEventListener('loadedmetadata', function() {
-                    duration = audioElement.duration;
-                    updateTimeDisplay();
-                });
-
-                audioElement.addEventListener('timeupdate', function() {
-                    currentTime = audioElement.currentTime;
-                    updateProgress();
-                });
-
-                audioElement.addEventListener('ended', function() {
-                    isPlaying = false;
-                    const playIcon = document.getElementById('playIcon');
-                    if (playIcon) playIcon.className = 'fas fa-play';
-                });
-
-                audioElement.volume = volume / 100;
-            }
-
             // Audio Player Controls
             const playButton = document.getElementById('playButton');
             const volumeButton = document.getElementById('volumeButton');
@@ -3548,31 +3674,26 @@
 
             if (playButton) {
                 playButton.addEventListener('click', function() {
-                    if (!audioElement) return;
+                    if (!ytPlayer) return;
                     
                     if (isPlaying) {
-                        audioElement.pause();
-                        isPlaying = false;
-                        document.getElementById('playIcon').className = 'fas fa-play';
+                        ytPlayer.pauseVideo();
                     } else {
-                        audioElement.play().then(() => {
-                            isPlaying = true;
-                            document.getElementById('playIcon').className = 'fas fa-pause';
-                        }).catch(console.error);
+                        ytPlayer.playVideo();
                     }
                 });
             }
 
             if (volumeButton) {
                 volumeButton.addEventListener('click', function() {
-                    if (!audioElement) return;
+                    if (!ytPlayer) return;
                     
-                    if (audioElement.muted) {
-                        audioElement.muted = false;
+                    if (ytPlayer.isMuted()) {
+                        ytPlayer.unMute();
                         volumeButton.innerHTML = '<i class="fas fa-volume-up"></i>';
                         volumeSlider.value = volume;
                     } else {
-                        audioElement.muted = true;
+                        ytPlayer.mute();
                         volumeButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
                     }
                 });
@@ -3580,10 +3701,10 @@
 
             if (volumeSlider) {
                 volumeSlider.addEventListener('input', function() {
-                    if (!audioElement) return;
+                    if (!ytPlayer) return;
                     
                     volume = this.value;
-                    audioElement.volume = volume / 100;
+                    ytPlayer.setVolume(volume);
                     
                     if (volume == 0) {
                         volumeButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
@@ -3597,14 +3718,14 @@
 
             if (progressBar) {
                 progressBar.addEventListener('click', function(e) {
-                    if (!audioElement || !duration) return;
+                    if (!ytPlayer || !duration) return;
                     
                     const rect = this.getBoundingClientRect();
                     const clickX = e.clientX - rect.left;
                     const percentage = clickX / rect.width;
                     const newTime = percentage * duration;
                     
-                    audioElement.currentTime = newTime;
+                    ytPlayer.seekTo(newTime);
                 });
             }
         });
